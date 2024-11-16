@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Jacob Bitonte</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to change greeting based on the time of day
+        function updateGreeting() {
+            const header = document.querySelector('header h1');
+            const currentHour = new Date().getHours();
+            if (currentHour < 12) {
+                header.textContent = "Good Morning, Welcome to My Journey";
+            } else if (currentHour < 18) {
+                header.textContent = "Good Afternoon, Welcome to My Journey";
+            } else {
+                header.textContent = "Good Evening, Welcome to My Journey";
+            }
+        }
+
+        // Function to toggle the visibility of the "Fun Fact" section
+        function toggleFunFact() {
+            const funFactSection = document.querySelector('aside');
+            if (funFactSection.style.display === 'none' || funFactSection.style.display === '') {
+                funFactSection.style.display = 'block';
+            } else {
+                funFactSection.style.display = 'none';
+            }
+        }
+
+        // Run the greeting update function on page load
+        window.onload = updateGreeting;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Journey</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="materialize.html">Materialize</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Introduction</h2>
+        <p>Hello, I'm Jacob Bitonte, currently pursuing a Bachelor's degree in Emerging Technology and Business Design at Miami University, with minors in Philosophy and Digital Marketing. My academic path has given me a blend of creativity, technology, and critical thinking, which I aim to apply to solving real-world challenges.</p>
+        <p>Traveling is one of my greatest passions. I had an amazing opportunity to study abroad at the John E. Dolibois European Center in Differdange, Luxembourg, where I immersed myself in different cultures and perspectives. These experiences have not only enriched my worldview but have also played a key role in shaping my ambitions for the future.</p>
+    </section>
+
+    <section>
+        <h2>Cross-Functional Expertise</h2>
+        <p>With a unique mix of cross-functional experience in sales, marketing, and strategic consulting, my background enables me to approach challenges holistically. Whether it’s through leveraging critical thinking skills honed from philosophy or engaging customers directly, I’m driven by a desire to connect the dots between technology, business, and human needs to create lasting progress.</p>
+    </section>
+
+    <aside>
+        <h3>Fun Fact</h3>
+        <p>I’ve managed a diverse range of projects—from building websites to running a small business, each experience contributing to a broader perspective on how to make impactful decisions.</p>
+    </aside>
+
+    <button onclick="toggleFunFact()">Toggle Fun Fact</button>
+
+    <footer>
+        <p>&copy; 2024 Jacob Bitonte. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

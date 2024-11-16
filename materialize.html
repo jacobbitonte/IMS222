@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize Page - Jacob Bitonte</title>
+    
+    <!-- Compiled and minified CSS from Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Custom Stylesheet (Optional) -->
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* Custom CSS for collapsible header and body */
+        .collapsible-header {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+
+        .collapsible-body {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .collapsible-body span {
+            line-height: 1.5;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <h1>Materialize Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="materialize.html">Materialize</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="center-align">Media Section</h2>
+
+        <!-- Circular Image and Video Embed -->
+        <section class="row">
+            <div class="col s12 m4">
+                <div class="circle-container">
+                    <img src="images/profilepictwo.jpg" alt="Your Name" class="circle responsive-img">
+                </div>
+            </div>
+
+            <div class="col s12 m8">
+                <h5 class="center-align">Watch this Video</h5>
+                <!-- Responsive Video Embed -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TBIjgBVFjVI?si=6kEuZZFLdhSadgAy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Section -->
+        <h3 class="center-align">Image Carousel</h3>
+        <section class="carousel-container">
+            <div class="carousel carousel-slider">
+                <!-- Use images from the Images folder -->
+                <a class="carousel-item" href="#one!"><img src="Images/profilepictwo.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"></a>
+                <a class="carousel-item" href="#three!"><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"></a>
+            </div>
+        </section>
+
+        <!-- Collapsible Section -->
+        <h3 class="center-align">Collapsible Sections</h3>
+        <section class="collapsible-container">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>First Panel</div>
+                    <div class="collapsible-body"><span>This is your first panel</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Second Panel</div>
+                    <div class="collapsible-body"><span>This is your second panel</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons"></i>Third Panel</div>
+                    <div class="collapsible-body"><span>This is your third panel</span></div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Card Section with Images -->
+        <section class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Project Image 1" class="responsive-img"> <!-- Responsive Image -->
+                        <span class="card-title">Project 1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>This is a sample project description. Materialize provides an elegant framework for card-based layouts. Here is some filler text to describe the project in more detail. You can expand on this section with actual content later.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Project Image 2" class="responsive-img"> <!-- Responsive Image -->
+                        <span class="card-title">Project 2</span>
+                    </div>
+                    <div class="card-content">
+                        <p>This is another project description. Use this space to provide additional context or content. Filler text can go here until you're ready to update the actual project details.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/965345/pexels-photo-965345.jpeg" alt="Sample Image" class="responsive-img"> <!-- Responsive Image -->
+                        <span class="card-title">Project 3</span>
+                    </div>
+                    <div class="card-content">
+                        <p>This is another sample description for the third project card. Cards can be styled further with custom CSS as needed. You can replace this text with actual content when you're ready.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="page-footer">
+            <div class="container">
+                <p>&copy; 2024 Jacob Bitonte. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Compiled and minified JavaScript from Materialize CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // Initialize Carousel and Collapsible
+        document.addEventListener('DOMContentLoaded', function() {
+            // Carousel Initialization
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                fullWidth: true, // Makes the carousel full-width
+                indicators: true // Shows indicators at the bottom
+            });
+
+            // Collapsible Initialization
+            var collapsibleElems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(collapsibleElems);
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
